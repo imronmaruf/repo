@@ -11,7 +11,7 @@
 </div>
 
 <div class="header">
-    <div class="header-content clearfix">
+    <div class="header-content clearfix ">
 
         <div class="nav-control">
             <div class="hamburger">
@@ -34,7 +34,7 @@
         </div>
         <div class="header-right">
             <ul class="clearfix">
-                <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                {{-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
                         <i class="mdi mdi-email-outline"></i>
                         <span class="badge badge-pill gradient-1">3</span>
                     </a>
@@ -97,8 +97,8 @@
 
                         </div>
                     </div>
-                </li>
-                <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                </li> --}}
+                {{-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
                         <i class="mdi mdi-bell-outline"></i>
                         <span class="badge badge-pill gradient-2">3</span>
                     </a>
@@ -155,47 +155,51 @@
 
                         </div>
                     </div>
-                </li>
+                </li> --}}
                 <li class="icons dropdown d-none d-md-flex">
-                    <a href="javascript:void(0)" class="log-user" data-toggle="dropdown">
-                        <span>English</span> <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                    <a href="#" class="log-user">
+                        <span>{{ Auth::user()->fullname }}</span>
                     </a>
-                    <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
-                        <div class="dropdown-content-body">
-                            <ul>
-                                <li><a href="javascript:void()">English</a></li>
-                                <li><a href="javascript:void()">Dutch</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </li>
+
                 <li class="icons dropdown">
                     <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                         <span class="activity active"></span>
-                        <img src="admin/images/user/1.png" height="40" width="40" alt="">
+                        <img src="{{ asset('picture/accounts/' . Auth::user()->gambar) }}" height="40" width="40"
+                            alt="">
                     </div>
                     <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
                         <div class="dropdown-content-body">
-                            <ul>
-                                <li>
-                                    <a href="app-profile.html"><i class="icon-user"></i>
-                                        <span>Profile</span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <i class="icon-envelope-open"></i> <span>Inbox</span>
-                                        <div class="badge gradient-3 badge-pill gradient-1">3</div>
-                                    </a>
-                                </li>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <img alt="" class="rounded-circle"
+                                        src="{{ asset('picture/accounts/' . Auth::user()->gambar) }}" height="50"
+                                        width="50">
+                                    <h5 class="card-widget__title text-dark mt-1">{{ Auth::user()->fullname }}</h5>
+                                    <span class="text-muted">{{ Auth::user()->nim }}</span>
+                                    {{-- <a class="btn gradient-4 btn-lg border-0 btn-rounded px-5"
+                                            href="javascript:void()">Folllow</a> --}}
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="app-profile.html"><i class="icon-user"></i>
+                                            <span>Profile</span></a>
+                                    </li>
 
-                                <hr class="my-2">
-                                <li>
+                                    <hr class="my-2">
+                                    {{-- <li>
                                     <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock
                                             Screen</span></a>
-                                </li>
-                                <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a>
-                                </li>
-                            </ul>
+                                </li> --}}
+                                    <li>
+                                        <a href="{{ route('logout') }}"><i class="icon-key"></i> <span>Logout</span></a>
+                                        {{-- <form action="{{ route('logout') }}" method="POST">
+                                        @csrf
+                                        <i class="icon-key" type="submit"><span>Logout</span></i>
+                                    </form> --}}
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </li>

@@ -35,6 +35,8 @@ Route::middleware(['guest'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('/home', '/user');
-    Route::get('/admin', [AdminController::class, 'index'])->name('admin');
-    Route::get('/user', [UserController::class, 'index'])->name('user');
+    Route::get('/administrator', [AdminController::class, 'index'])->name('admin')->middleware('userAkses:admin');
+    Route::get('/user', [UserController::class, 'index'])->name('user')->middleware('userAkses:user');
+
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });
