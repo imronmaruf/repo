@@ -9,7 +9,7 @@
                         <p class="animated slideInDown">Website ini bertujuan untuk memudahkan mahasiswa dan dosen untuk
                             melakukan pengarsipan laporan dan program kerja praktek dan tugas akhir, serta memudahkan
                             mahasiswa untuk mencari referensi dari penelitian terdahulu oleh mahasiswa Sistem Informasi.</p>
-                        <a href="/register" class="btn btn-primary py-3 px-4 animated slideInDown">Gabung</a>
+                        <a href="{{ route('registrasi') }}" class="btn btn-primary py-3 px-4 animated slideInDown">Gabung</a>
                     </div>
                     {{-- <div class="col-lg-6 animated fadeIn">
                         <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/hero-1.png"
