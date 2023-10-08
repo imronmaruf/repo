@@ -17,6 +17,8 @@
     <!-- Custom Stylesheet -->
     <link href="{{ asset('admin/css/style.css') }}" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </head>
 
 <body>
@@ -41,6 +43,8 @@
     ***********************************-->
     <div id="main-wrapper">
 
+        @include('sweetalert::alert')
+
         <!--**********************************
             Nav header start
         ***********************************-->
@@ -61,7 +65,6 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-
         @include('admin.partials.sidebar')
 
         <!--**********************************
@@ -103,6 +106,11 @@
     <!--**********************************
         Scripts
     ***********************************-->
+
+    <!--Custom Js Alert-->
+
+
+    <script src="{{ asset('admin/js/app.js') }}"></script>
     <script src="{{ asset('admin/plugins/common/common.min.j') }}s"></script>
     <script src="{{ asset('admin/js/custom.min.js') }}"></script>
     <script src="{{ asset('admin/js/settings.js') }}"></script>
