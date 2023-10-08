@@ -3,7 +3,7 @@
         <ul class="metismenu" id="menu">
             {{-- <li class="nav-label"></li> --}}
             <li>
-                <a href="/dashboard" aria-expanded="false">
+                <a href="{{ url('/dashboard') }}" aria-expanded="false">
                     <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                 </a>
 
@@ -21,21 +21,30 @@
             </li>
 
             {{-- <li class="nav-label">Forms</li> --}}
-            <li>
-                <a href="/kategori" aria-expanded="false">
-                    <i class="icon-note menu-icon"></i><span class="nav-text">Kategori</span>
-                </a>
-            </li>
-            {{-- <li class="nav-label">Table</li> --}}
-            <li>
-                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                    <i class="icon-user menu-icon"></i><span class="nav-text">Anggota</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="/agt-admin">Admin</a></li>
-                    <li><a href="/agt-mhs">Mahasiswa</a></li>
-                </ul>
-            </li>
+            @if (auth()->user() && auth()->user()->role === 'admin')
+                <li>
+                    <a href="{{ route('kategori') }}" aria-expanded="false">
+                        <i class="icon-list menu-icon"></i><span class="nav-text">Kategori</span>
+                    </a>
+                </li>
+                </li>
+                {{-- <li class="nav-label">Table</li> --}}
+
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-note menu-icon"></i><span class="nav-text">Data</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="{{ route('datamhs') }}">Data Mahasiswa</a></li>
+                        <li><a href="{{ route('dosbing') }}">Data Dosbing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ route('usercontrol') }}" aria-expanded="false">
+                        <i class="icon-user menu-icon"></i><span class="nav-text">User Control</span>
+                    </a>
+                </li>
+            @endif
 
             <li class="nav-label">Pengaturan</li>
             <li>

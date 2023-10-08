@@ -165,7 +165,7 @@
                 <li class="icons dropdown">
                     <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                         <span class="activity active"></span>
-                        <img src="{{ asset('picture/accounts/' . Auth::user()->gambar) }}" height="40" width="40"
+                        <img src="{{ asset('picture/accounts/' . Auth::user()->gambar) }}" height="100" width="100"
                             alt="">
                     </div>
                     <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">

@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     function index(){
-        return view('admin/pointakses/user/index');
+        return view('admin.pages.dashboard');
     }
 }
