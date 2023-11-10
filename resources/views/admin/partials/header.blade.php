@@ -1,7 +1,7 @@
 <div class="nav-header">
     <div class="brand-logo">
         <a href="index.html">
-            <b class="logo-abbr"><img src="{{ asset('admin/images/logo-min.png') }}" alt=""> </b>
+            <b class="logo-abbr"><img src="{{ asset('admin/images/logo-min.png') }}" alt=""></b>
             <span class="logo-compact"><img src="{{ asset('admin/images/compact-logo2x.png') }}" alt=""></span>
             <span class="brand-title">
                 <img src="{{ asset('admin/images/compact-logo2x.png') }}" alt="">
@@ -11,8 +11,7 @@
 </div>
 
 <div class="header">
-    <div class="header-content clearfix ">
-
+    <div class="header-content clearfix">
         <div class="nav-control">
             <div class="hamburger">
                 <span class="toggle-icon"><i class="icon-menu"></i></span>
@@ -34,134 +33,11 @@
         </div>
         <div class="header-right">
             <ul class="clearfix">
-                {{-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
-                        <i class="mdi mdi-email-outline"></i>
-                        <span class="badge badge-pill gradient-1">3</span>
-                    </a>
-                    <div class="drop-down animated fadeIn dropdown-menu">
-                        <div class="dropdown-content-heading d-flex justify-content-between">
-                            <span class="">3 New Messages</span>
-                            <a href="javascript:void()" class="d-inline-block">
-                                <span class="badge badge-pill gradient-1">3</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-content-body">
-                            <ul>
-                                <li class="notification-unread">
-                                    <a href="javascript:void()">
-                                        <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg"
-                                            alt="">
-                                        <div class="notification-content">
-                                            <div class="notification-heading">Saiful Islam</div>
-                                            <div class="notification-timestamp">08 Hours ago</div>
-                                            <div class="notification-text">Hi Teddy, Just wanted to let you ...
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-unread">
-                                    <a href="javascript:void()">
-                                        <img class="float-left mr-3 avatar-img" src="images/avatar/2.jpg"
-                                            alt="">
-                                        <div class="notification-content">
-                                            <div class="notification-heading">Adam Smith</div>
-                                            <div class="notification-timestamp">08 Hours ago</div>
-                                            <div class="notification-text">Can you do me a favour?</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <img class="float-left mr-3 avatar-img" src="images/avatar/3.jpg"
-                                            alt="">
-                                        <div class="notification-content">
-                                            <div class="notification-heading">Barak Obama</div>
-                                            <div class="notification-timestamp">08 Hours ago</div>
-                                            <div class="notification-text">Hi Teddy, Just wanted to let you ...
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <img class="float-left mr-3 avatar-img" src="images/avatar/4.jpg"
-                                            alt="">
-                                        <div class="notification-content">
-                                            <div class="notification-heading">Hilari Clinton</div>
-                                            <div class="notification-timestamp">08 Hours ago</div>
-                                            <div class="notification-text">Hello</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </li> --}}
-                {{-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
-                        <i class="mdi mdi-bell-outline"></i>
-                        <span class="badge badge-pill gradient-2">3</span>
-                    </a>
-                    <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
-                        <div class="dropdown-content-heading d-flex justify-content-between">
-                            <span class="">2 New Notifications</span>
-                            <a href="javascript:void()" class="d-inline-block">
-                                <span class="badge badge-pill gradient-2">5</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-content-body">
-                            <ul>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-success-lighten-2"><i
-                                                class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Events near you</h6>
-                                            <span class="notification-text">Within next 5 days</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-danger-lighten-2"><i
-                                                class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Event Started</h6>
-                                            <span class="notification-text">One hour ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-success-lighten-2"><i
-                                                class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Event Ended Successfully</h6>
-                                            <span class="notification-text">One hour ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-danger-lighten-2"><i
-                                                class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Events to Join</h6>
-                                            <span class="notification-text">After two days</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </li> --}}
                 <li class="icons dropdown d-none d-md-flex">
                     <a href="#" class="log-user">
                         <span>{{ Auth::user()->fullname }}</span>
                     </a>
                 </li>
-
                 <li class="icons dropdown">
                     <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                         <span class="activity active"></span>
@@ -176,27 +52,23 @@
                                         src="{{ asset('picture/accounts/' . Auth::user()->gambar) }}" height="50"
                                         width="50">
                                     <h5 class="card-widget__title text-dark mt-1">{{ Auth::user()->fullname }}</h5>
-                                    <span class="text-muted">{{ Auth::user()->nim }}</span>
-                                    {{-- <a class="btn gradient-4 btn-lg border-0 btn-rounded px-5"
-                                            href="javascript:void()">Folllow</a> --}}
+                                    @if (Auth::user()->role === 'user')
+                                        <span class="text-muted">{{ Auth::user()->nim }}</span>
+                                    @elseif(Auth::user()->role === 'admin')
+                                        <span class="text-muted">{{ Auth::user()->email }}</span>
+                                    @endif
                                 </div>
                                 <ul>
                                     <li>
                                         <a href="app-profile.html"><i class="icon-user"></i>
                                             <span>Profile</span></a>
                                     </li>
-
                                     <hr class="my-2">
-                                    {{-- <li>
-                                    <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock
-                                            Screen</span></a>
-                                </li> --}}
                                     <li>
-                                        <a href="{{ route('logout') }}"><i class="icon-key"></i> <span>Logout</span></a>
-                                        {{-- <form action="{{ route('logout') }}" method="POST">
-                                        @csrf
-                                        <i class="icon-key" type="submit"><span>Logout</span></i>
-                                    </form> --}}
+                                        <a href="#" data-toggle="modal" data-target="#modalLogout"><i
+                                                class="fa fa-sign-out"></i>
+                                            <i class=""></i>
+                                            <span>Logout</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -204,6 +76,28 @@
                     </div>
                 </li>
             </ul>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalLogout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Keluar</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Apakah Anda yakin untuk keluar?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" data-dismiss="modal">Batal</button>
+                <a href="{{ route('logout') }}" class="btn btn-danger"> <span>Keluar</span></a>
+
+            </div>
         </div>
     </div>
 </div>

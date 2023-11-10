@@ -19,7 +19,7 @@
 
     <table>
         <tr>
-            <td>Full Name</td>
+            <td>Nama Lengkap</td>
             <td>:</td>
             <td>{{ $details['nama'] }}</td>
         </tr>
@@ -47,7 +47,7 @@
         <center>
             <h3>Kilk di bawah ini untuk verifikasi akun anda : </h3>
             <a href="{{ $details['url'] }}"
-                style="text-decoration: none;color: rgb(255,255,255); padding: 9px; background-color: blue; font: bold; border-radius: 50%;">Verifikasi</a>
+                style="text-decoration: none;color: rgb(255,255,255); padding: 9px; background-color: blue; font: bold; border-radius: 20%;">Verifikasi</a>
             <br><br><br>
             <p>
                 Copyright @ 2022 | Prodi Sistem Informasi
