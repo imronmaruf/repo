@@ -1,0 +1,42 @@
+.profile-set {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Center the content inside profile-set */
+}
+
+.profile-set img {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile-set a {
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.4rem;
+    padding: 2px;
+    display: inline-block;
+}
+
+.profile-set i {
+    position: absolute;
+    background-color: #4d7cff;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0rem;
+    right: 0rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.user-info {
+    text-align: center;
+}

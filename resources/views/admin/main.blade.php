@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('admin/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css') }}">
     <!-- Custom Stylesheet -->
     <link href="{{ asset('admin/css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/custom.css') }}">
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
@@ -100,13 +101,6 @@
             Footer end
         ***********************************-->
     </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
-
-    <!--**********************************
-        Scripts
-    ***********************************-->
 
     <!--Custom Js Alert-->
 

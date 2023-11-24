@@ -16,6 +16,24 @@ function showErrorAlert() {
     });
 }
 
+function confirmEdit(event) {
+    Swal.fire({
+        title: "Yakin Update Data?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6",
+        confirmButtonText: "Ya, Update",
+        cancelButtonText: "Batal",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            event.target.submit();
+        } else {
+            Swal.fire("Dibatalkan", "Data tetap aman :)", "info");
+        }
+    });
+}
+
 function confirmHapus(event) {
     event.preventDefault();
 
