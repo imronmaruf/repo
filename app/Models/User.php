@@ -21,6 +21,7 @@ class User extends Authenticatable
         'fullname',
         'nim',
         'email',
+        'hp',
         'password',
         'gambar',
         'verify_key',
@@ -46,4 +47,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+  
 }

@@ -67,10 +67,16 @@ Route::middleware(['auth'])->group(function () {
 
 
     // User Profile
-    Route::get('profile',[UserControlController::class,'profile'])->name('profile');
-
+    Route::get('/profile',[UserController::class,'profile'])->name('profile');
+    
+    
+    
     // User Control
     Route::get('/usercontrol',[UserControlController::class,'index'])->name('usercontrol');
+    Route::post('/edit-user/{id}',[UserControlController::class,'edit']);
+    Route::post('/hps-user/{id}',[UserControlController::class,'delete']);
+    Route::get('/tbh-user', [UserControlController::class, 'create'])->name('tbhUser');
+    Route::post('/tbh-user', [UserControlController::class, 'tbhUser']);
 
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });

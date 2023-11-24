@@ -22,6 +22,7 @@ class AdminSeeder extends Seeder
             'fullname' => 'Administrator',
             'nim' => '123123123',
             'email' => 'siunimal@gmail.com',
+            'hp' => '082242807340',
             'password' => bcrypt('Adminrepo1234'),
             'verify_key' => $verifykey,
             'gambar' => 'logo-unimal.png',
